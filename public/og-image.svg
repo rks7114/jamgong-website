@@ -1,0 +1,113 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definitions for Gradients and Filters -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0E27" />
+      <stop offset="100%" stop-color="#050818" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="1" />
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0" />
+    </linearGradient>
+    <filter id="glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="holoGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComponentTransfer in="blur" result="brightBlur">
+        <feFuncA type="linear" slope="1.5"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode in="brightBlur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)" />
+
+  <!-- Starry Particle Effect -->
+  <g opacity="0.6">
+    <circle cx="100" cy="80" r="1.5" fill="#fff" opacity="0.5" />
+    <circle cx="250" cy="120" r="1" fill="#00f2fe" opacity="0.8" />
+    <circle cx="420" cy="90" r="2" fill="#fff" opacity="0.3" />
+    <circle cx="580" cy="150" r="1.5" fill="#ec4899" opacity="0.6" />
+    <circle cx="730" cy="70" r="1" fill="#fff" opacity="0.9" />
+    <circle cx="890" cy="110" r="2.5" fill="#00f2fe" opacity="0.4" />
+    <circle cx="1050" cy="130" r="1.5" fill="#fff" opacity="0.7" />
+    <circle cx="1150" cy="90" r="1" fill="#ec4899" opacity="0.5" />
+
+    <circle cx="80" cy="320" r="1" fill="#fff" opacity="0.4" />
+    <circle cx="220" cy="280" r="2" fill="#ec4899" opacity="0.5" />
+    <circle cx="390" cy="350" r="1.5" fill="#00f2fe" opacity="0.7" />
+    <circle cx="550" cy="290" r="1" fill="#fff" opacity="0.6" />
+    <circle cx="710" cy="330" r="2.5" fill="#fff" opacity="0.3" />
+    <circle cx="860" cy="270" r="1.5" fill="#ec4899" opacity="0.8" />
+    <circle cx="1010" cy="310" r="1" fill="#00f2fe" opacity="0.5" />
+
+    <circle cx="150" cy="520" r="2.5" fill="#00f2fe" opacity="0.6" />
+    <circle cx="310" cy="480" r="1" fill="#fff" opacity="0.8" />
+    <circle cx="470" cy="550" r="1.5" fill="#ec4899" opacity="0.4" />
+    <circle cx="630" cy="490" r="2" fill="#fff" opacity="0.5" />
+    <circle cx="790" cy="530" r="1" fill="#00f2fe" opacity="0.9" />
+    <circle cx="940" cy="470" r="2.5" fill="#fff" opacity="0.3" />
+    <circle cx="1090" cy="510" r="1.5" fill="#ec4899" opacity="0.7" />
+  </g>
+
+  <!-- Left Side: Branding -->
+  <g transform="translate(120, 0)">
+    <!-- Logo "JAMGONG" -->
+    <text x="0" y="270" font-family="system-ui, -apple-system, sans-serif" font-size="95" font-weight="900" fill="#00E5E5" letter-spacing="0.05em" filter="url(#glowFilter)">JAMGONG</text>
+    
+    <!-- Subtitle "AI Data Analytics Solution" -->
+    <text x="5" y="335" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="500" fill="#FFFFFF" letter-spacing="0.03em" opacity="0.95">AI Data Analytics Solution</text>
+    
+    <!-- Thin cyan-magenta glowing dividing line -->
+    <rect x="5" y="370" width="460" height="3" fill="url(#glowGrad)" />
+  </g>
+
+  <!-- Right Side: 3D Hologram Projection Object -->
+  <g transform="translate(850, 315)">
+    <!-- Outer Cyan Glow ring -->
+    <circle cx="0" cy="0" r="180" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-opacity="0.12" />
+    <circle cx="0" cy="0" r="150" fill="none" stroke="#00f2fe" stroke-width="2" stroke-opacity="0.25" stroke-dasharray="10 15" />
+    
+    <!-- Concentric Magenta Rings -->
+    <ellipse cx="0" cy="0" rx="120" ry="45" fill="none" stroke="#ec4899" stroke-width="2.5" stroke-opacity="0.4" transform="rotate(-30)" filter="url(#holoGlow)" />
+    <ellipse cx="0" cy="0" rx="120" ry="45" fill="none" stroke="#00f2fe" stroke-width="2" stroke-opacity="0.5" transform="rotate(30)" filter="url(#holoGlow)" />
+    
+    <!-- Outer Rotating Rings style -->
+    <circle cx="0" cy="0" r="95" fill="none" stroke="#00E5E5" stroke-width="1" stroke-opacity="0.2" />
+    <circle cx="0" cy="0" r="75" fill="none" stroke="#ec4899" stroke-width="1.5" stroke-opacity="0.3" stroke-dasharray="5 8" />
+
+    <!-- Center Glowing Sphere/Core -->
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#00f2fe" stroke-width="3" filter="url(#holoGlow)" />
+    <circle cx="0" cy="0" r="18" fill="none" stroke="#ec4899" stroke-width="2" />
+    <circle cx="0" cy="0" r="8" fill="#00f2fe" filter="url(#glowFilter)" />
+    
+    <!-- Connecting constellation/matrix lines -->
+    <line x1="-120" y1="-45" x2="-30" y2="0" stroke="#00f2fe" stroke-width="1" stroke-opacity="0.3" />
+    <line x1="120" y1="45" x2="30" y2="0" stroke="#ec4899" stroke-width="1" stroke-opacity="0.3" />
+    <line x1="-60" y1="80" x2="0" y2="30" stroke="#00f2fe" stroke-width="1" stroke-opacity="0.25" />
+    <line x1="60" y1="-80" x2="0" y2="-30" stroke="#ec4899" stroke-width="1" stroke-opacity="0.25" />
+    
+    <!-- Hologram matrix points/dots -->
+    <circle cx="-120" cy="-45" r="4" fill="#00f2fe" filter="url(#glowFilter)" />
+    <circle cx="120" cy="45" r="4" fill="#ec4899" filter="url(#glowFilter)" />
+    <circle cx="-60" cy="80" r="3.5" fill="#00f2fe" />
+    <circle cx="60" cy="-80" r="3.5" fill="#ec4899" />
+    <circle cx="0" cy="115" r="3" fill="#00f2fe" opacity="0.6" />
+    <circle cx="0" cy="-115" r="3" fill="#ec4899" opacity="0.6" />
+
+    <!-- Technical Scanner line overlay -->
+    <line x1="-160" y1="-10" x2="160" y2="-10" stroke="#00f2fe" stroke-width="1.5" stroke-opacity="0.5" filter="url(#glowFilter)" />
+  </g>
+
+  <!-- Bottom Right: Intellectual Property Info -->
+  <text x="1080" y="580" font-family="monospace" font-size="20" font-weight="700" fill="#00f2fe" letter-spacing="0.05em" opacity="0.65" text-anchor="end">Patent Pending · 15 IPs</text>
+</svg>

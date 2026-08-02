@@ -1,0 +1,6 @@
+{
+  "name": "JAMGONG",
+  "description": "인류의 고전 빅데이터를 초고속 알고리즘으로 연산하는 잼공의 고정밀 AI 예측 엔진 및 3대 핵심 글로벌 솔루션 포트폴리오.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

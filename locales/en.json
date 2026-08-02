@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "tech": "Tech Proof",
+    "business": "Business Units",
+    "searchPlaceholder": "Search solutions and patents...",
+    "mobileSearchPlaceholder": "Search...",
+    "searchRecommend": "Recommended: JAMGONG ORACLE, NEURALSYNC, Patents",
+    "noResults": "No search results found."
+  },
+  "hero": {
+    "titleLine1": "Quantifying humanity's classical big data",
+    "titleLine2": "with ultra-speed algorithm computation.",
+    "subtitle": "We build a global decision-making platform with JAMGONG's proprietary technology, which quantifies thousands of years of humanities and mathematical data and reconstructs it into a unique predictive algorithm engine.",
+    "btnTech": "View Tech Proof",
+    "btnBusiness": "Explore Business Units"
+  },
+  "techProof": {
+    "subtitle": "Proven core technologies, verified by numbers",
+    "ipBadgeTitle": "Intellectual Property (IP) Portfolio",
+    "ipBadgeCount": "16 Cases",
+    "ipBadgeSub": "(15 Patents · 1 Trademark, Pending)",
+    "certTitle": "15 Patent Applications · 1 Trademark Application",
+    "pending": "Pending",
+    "viewDetail": "Detail View"
+  },
+  "business": {
+    "title": "4 Core Technologies",
+    "subtitle": "Solution Portfolio",
+    "portfolioSubtitle": "Solution Portfolio (Based on 15 Patent Applications & 1 Trademark)"
+  },
+  "cards": {
+    "oracle": {
+      "name": "JAMGONG ORACLE™",
+      "desc": "A high-precision predictive engine trained on historical, mathematical, astronomical, and statistical big data. It is a strategic decision-making reference engine based on traditional classical forecasting and astronomical data.",
+      "spec1": "Real-time Multivariate Time-series Forecasting",
+      "spec2": "Multivariate Data Analysis Module",
+      "spec3": "Enterprise Integrated API Integration"
+    },
+    "neutralsync": {
+      "name": "JAMGONG NEURALSYNC™",
+      "desc": "An intelligent engine that analyzes and predicts multi-source time-series data in real-time based on meta-learning in dynamically changing environments. It integrates temporal, environmental, status, and contextual data through cross-modal attention, providing prediction uncertainties alongside explanations.",
+      "spec1": "Meta-learning Based Real-time Adaptation",
+      "spec2": "Cross-modal Attention Data Fusion",
+      "spec3": "Uncertainty Quantification & Explainable AI (XAI)",
+      "signature": "★ Based on intelligent system algorithm architecture for time-series pattern analysis and prediction in dynamic environments"
+    },
+    "synergy": {
+      "name": "JAMGONGTALK™",
+      "desc": "An AI engine that parses dog behavior description texts into semantic, emotional, and contextual channels. It synthesizes breed-specific adaptive weights with non-additive synergy of behavioral symbol pairs to estimate emotional states, operating purely on text inputs without cameras or wearables.",
+      "spec1": "3-Channel Semantic, Emotional & Contextual Parsing",
+      "spec2": "Breed-specific Adaptive Weight Mapping",
+      "spec3": "Non-additive Synergy Inference of Symbol Pairs"
+    },
+    "holo": {
+      "name": "JAMGONG HOLO™",
+      "descHighlight": "The moment eyes meet in mid-air, a new conversation begins.",
+      "descMain": "A next-generation immersive AI engine where a 3D character projected in the air detects the user's gaze and emotions in real-time to create natural interactions.",
+      "descSub": "It is realized through JAMGONG's unique fusion of optics and AI, linking physical space and digital existence.",
+      "spec1": "Real-time Gaze Interaction",
+      "spec2": "Immediate On-device Response",
+      "spec3": "Immersive Optimization Algorithm"
+    }
+  },
+  "footer": {
+    "solutionDesc": "AI Data Analysis Solution",
+    "copyright": "© 2026 JAMGONG ALL RIGHTS RESERVED. 15 Patent Applications · 1 Trademark Application (Pending)"
+  }
+}

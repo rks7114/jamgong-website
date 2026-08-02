@@ -1,0 +1,98 @@
+{
+  "nav": {
+    "tech": "Tech Proof",
+    "business": "Business Units",
+    "searchPlaceholder": "Search solutions and patents...",
+    "mobileSearchPlaceholder": "Search...",
+    "searchRecommend": "Recommended: JAMGONG ORACLE, NEURALSYNC, Patents",
+    "noResults": "No search results found."
+  },
+  "hero": {
+    "titleLine1": "AI-Powered Data Analytics &",
+    "titleLine2": "Digital Platform Tech Company",
+    "subtitle": "A technology company researching and developing AI-based data analytics and digital platforms.",
+    "btnTech": "View Tech Proof",
+    "btnInyeon": "Jamgong Inyeon Sachal →",
+    "btnTalk": "Jamgong Talk →",
+    "btnOracle": "Jamgong Oracle →",
+    "oracleTooltip": "Coming Soon",
+    "btnBusiness": "Explore Business Units"
+  },
+  "techProof": {
+    "subtitle": "Core technologies pending patents, presented with structure and figures",
+    "ipBadgeTitle": "Intellectual Property (IP) Applications",
+    "ipBadgeCount": "17 Cases",
+    "ipBadgeSub": "(16 Patents · 1 Trademark, Pending)",
+    "certTitle": "16 Patent Applications · 1 Trademark Application",
+    "pending": "Patent Pending",
+    "viewDetail": "Detail View"
+  },
+  "business": {
+    "title": "4 Core Technologies",
+    "subtitle": "Solution Portfolio",
+    "portfolioSubtitle": "Solution Portfolio (Based on 16 Patent Applications & 1 Trademark)"
+  },
+  "cards": {
+    "oracle": {
+      "name": "JAMGONG ORACLE™",
+      "desc": "A high-precision predictive engine trained on historical, mathematical, astronomical, and statistical big data. It is a strategic decision-making reference engine based on traditional classical forecasting and astronomical data.",
+      "spec1": "Real-time Multivariate Time-series Forecasting",
+      "spec2": "Multivariate Data Analysis Module",
+      "spec3": "Enterprise Integrated API Integration"
+    },
+    "neutralsync": {
+      "name": "JAMGONG NEURALSYNC™",
+      "desc": "An intelligent engine that analyzes and predicts multi-source time-series data in real-time based on meta-learning in dynamically changing environments. It integrates temporal, environmental, status, and contextual data through cross-modal attention, providing prediction uncertainties alongside explanations.",
+      "spec1": "Meta-learning Based Real-time Adaptation",
+      "spec2": "Cross-modal Attention Data Fusion",
+      "spec3": "Uncertainty Quantification & Explainable AI (XAI)",
+      "signature": "★ Based on intelligent system algorithm architecture for time-series pattern analysis and prediction in dynamic environments"
+    },
+    "synergy": {
+      "name": "JAMGONGTALK™",
+      "desc": "An AI engine that parses dog behavior description texts into semantic, emotional, and contextual channels. It synthesizes breed-specific adaptive weights with non-additive synergy of behavioral symbol pairs to estimate emotional states, operating purely on text inputs without cameras or wearables.",
+      "spec1": "3-Channel Semantic, Emotional & Contextual Parsing",
+      "spec2": "Breed-specific Adaptive Weight Mapping",
+      "spec3": "Non-additive Synergy Inference of Symbol Pairs"
+    },
+    "holo": {
+      "name": "JAMGONG HOLO™",
+      "descHighlight": "The moment eyes meet in mid-air, a new conversation begins.",
+      "descMain": "A next-generation immersive AI engine where a 3D character projected in the air detects the user's gaze and emotions in real-time to create natural interactions.",
+      "descSub": "It is realized through JAMGONG's unique fusion of optics and AI, linking physical space and digital existence.",
+      "spec1": "Real-time Gaze Interaction",
+      "spec2": "Immediate On-device Response",
+      "spec3": "Immersive Optimization Algorithm"
+    }
+  },
+  "footer": {
+    "companyInfo": "JAMGONG | 39 Gonghang-daero, Gangseo-gu, Seoul, Republic of Korea",
+    "researchInst": "JAMGONG RESEARCH INSTITUTE",
+    "researchScope": "AI Data Analytics · Recommendation Algorithm Research · Publishing",
+    "copyright": "Copyright © 2026 JAMGONG. All rights reserved."
+  },
+  "portfolio": {
+    "title": "Solution Portfolio (Based on 16 Patent Applications · 1 Trademark)",
+    "badge": "Based on 16 Patent Applications · 1 Trademark",
+    "patentNoLabel": "Patent Pending",
+    "pending": "Patent Pending",
+    "cards": {
+      "coreAi01": "Natural Language Index Analysis and Ephemeris Transit Combined Prediction System",
+      "quant01": "Multi-Period Signal Fusion and Dynamic Weight Calculation Combined Prediction System",
+      "quant02": "Dynamic Environment Time-Series Pattern Analysis and Prediction Intelligent System",
+      "coreAi02": "Saju Five Elements Interaction and Celestial Energy Integrated Naming Computation System",
+      "coreAi03": "Multi-Heterogeneous Data Weighted Learning Optimization Decision-Making System",
+      "system01": "Multi-Dimensional Environmental Energy Flow Living Space Optimization Analysis System",
+      "system02": "Biorhythm-Based Predictive Space Optimization Integrated Control Infrastructure",
+      "coreAi04": "Multi-Modal Bio-Signal Based Emotional Synchronization Index Inference System",
+      "apiBio01": "Ephemeris Real-time Transit Computation Life Cycle Indicator Generation System",
+      "quant03": "Multi-Bio Environmental Data Fusion Individual State Prediction System",
+      "quant04": "External Variable-Linked Probabilistic Ranking Prediction Optimal Combination System",
+      "quant05": "Time-Series Pattern Learning Dynamic Weight Adjustment Real-time Visualization System",
+      "system03": "Electric Drill-Driven Spiral Gold Placer Mining System",
+      "system04": "Dog Behavior Description Text Multi-Channel Embedding Inference System",
+      "immersive01": "Hologram Display System Based on User Gaze Tracking",
+      "synergyRank01": "Customized Subject Ranking System and Method Using Five-Elements Based Directional Matrix and Deviation-Damped Non-Additive Synergy Computation"
+    }
+  }
+}

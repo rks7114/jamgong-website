@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500;750&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+:root {
+  --bg: #030712;
+  --surface: #050811;
+  --surface-hover: #070b1a;
+  --border: rgba(0, 242, 254, 0.12);
+  --accent: #00f2fe;
+  --accent-purple: #c084fc;
+  --accent-green: #10b981;
+  --text: #F8FAFC;
+  --muted: #94A3B8;
+  --gold: #A855F7;
+}
+
+body {
+  background-color: var(--bg);
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(13, 27, 62, 0.45) 0%, transparent 50%),
+    radial-gradient(circle at 10% 30%, rgba(0, 242, 254, 0.04) 0%, transparent 40%),
+    radial-gradient(circle at 90% 70%, rgba(192, 132, 252, 0.04) 0%, transparent 40%),
+    linear-gradient(rgba(255, 255, 255, 0.005) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.005) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 40px 40px, 40px 40px;
+  color: var(--text);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  letter-spacing: -0.01em;
+}
+
+/* Custom gorgeous animations */
+@keyframes pulseGlowCyan {
+  0%, 100% { box-shadow: 0 0 10px rgba(0, 242, 254, 0.2); opacity: 1; }
+  50% { box-shadow: 0 0 25px rgba(0, 242, 254, 0.6); opacity: 0.8; }
+}
+
+@keyframes pulseGlowPurple {
+  0%, 100% { box-shadow: 0 0 10px rgba(192, 132, 252, 0.2); opacity: 1; }
+  50% { box-shadow: 0 0 25px rgba(192, 132, 252, 0.6); opacity: 0.8; }
+}
+
+@keyframes pulseGlowGreen {
+  0%, 100% { box-shadow: 0 0 10px rgba(16, 185, 129, 0.2); opacity: 1; }
+  50% { box-shadow: 0 0 25px rgba(16, 185, 129, 0.6); opacity: 0.8; }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlowCyan 2.2s ease-in-out infinite;
+}
+
+.animate-pulse-glow-cyan {
+  animation: pulseGlowCyan 2.2s ease-in-out infinite;
+}
+
+.animate-pulse-glow-purple {
+  animation: pulseGlowPurple 2.2s ease-in-out infinite;
+}
+
+.animate-pulse-glow-green {
+  animation: pulseGlowGreen 2.2s ease-in-out infinite;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(0.5deg); }
+}
+
+.animate-float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 30s linear infinite;
+}
+
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+.scanline-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.scanline-effect::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(to bottom, transparent, rgba(0, 240, 255, 0.08), transparent);
+  animation: scanline 6s linear infinite;
+  pointer-events: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 240, 255, 0.15);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 240, 255, 0.4);
+}
+
+/* Infinite Marquee Stream Animations */
+@keyframes marqueeStream {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee-stream {
+  display: flex;
+  width: max-content;
+  animation: marqueeStream 120s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-stream:hover {
+  animation-play-state: paused;
+}
+
+/* [3D 입체 배경 시스템] 과학, AI, 천문 효과 복합 가동 */
+.space-bg-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  /* 브라우저가 연산을 멈추지 않도록 하드웨어 레이어 강제 분리 */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* 1. 과학(Science): 정밀 수학적 기하학 그리드 */
+.science-grid {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background-image: linear-gradient(rgba(0, 242, 254, 0.04) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(0, 242, 254, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  transform: rotateX(65deg) rotateZ(20deg);
+  /* 무한 스트리밍 스크롤 가동 */
+  animation: gridStream 20s linear infinite;
+  will-change: transform;
+}
+
+/* 2. 천문(Astronomy): 3D 성단 및 천 체력 우주 궤도 무한 회전 */
+.astronomy-cosmic {
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  top: -25%;
+  left: -25%;
+  background: 
+      radial-gradient(1.5px 1.5px at 100px 150px, rgba(0, 242, 254, 0.85), transparent),
+      radial-gradient(2px 2px at 300px 700px, rgba(192, 132, 252, 0.75), transparent),
+      radial-gradient(1.5px 1.5px at 500px 240px, rgba(16, 185, 129, 0.8), transparent),
+      radial-gradient(2.5px 2.5px at 800px 400px, #ffffff, transparent),
+      radial-gradient(1px 1px at 1100px 800px, rgba(0, 242, 254, 0.6), transparent);
+  background-size: 600px 600px;
+  /* 멈춤 현상을 방지하는 리니어 영구 자전 루프 */
+  animation: cosmicInfiniteRotate 90s linear infinite;
+  will-change: transform;
+}
+
+/* 3. AI(Artificial Intelligence): 끊임없이 낙하하는 펄스 매트릭스 스트림 */
+.ai-matrix-stream {
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  top: -50%;
+  background: linear-gradient(180deg, 
+      rgba(0, 242, 254, 0) 0%, 
+      rgba(0, 242, 254, 0.03) 25%, 
+      rgba(192, 132, 252, 0.03) 75%, 
+      rgba(0, 242, 254, 0) 100%);
+  animation: matrixFlowDown 12s linear infinite;
+  will-change: transform;
+}
+
+/* 멈춤/튀김 현상을 완전 제어하는 하이테크 키프레임 설계 */
+@keyframes gridStream {
+  0% { transform: rotateX(65deg) rotateZ(20deg) translateY(0); }
+  100% { transform: rotateX(65deg) rotateZ(20deg) translateY(60px); }
+}
+@keyframes cosmicInfiniteRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes matrixFlowDown {
+  0% { transform: translateY(-50%); }
+  100% { transform: translateY(0%); }
+}
+
+/* Highly calibrated text-shadow for absolute high contrast over dynamic background fields */
+.slogan-heavy-shadow {
+  text-shadow: 0 0 15px rgba(3, 7, 18, 0.95), 0 0 35px rgba(3, 7, 18, 0.9), 0 4px 8px rgba(0, 0, 0, 1);
+}
+
+/* Dark Brushed Metallic texture with premium overlay */
+.brushed-metal {
+  background: 
+    linear-gradient(90deg, rgba(3, 7, 18, 0.98) 0%, rgba(9, 15, 33, 0.98) 50%, rgba(3, 7, 18, 0.98) 100%),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.015) 0px, rgba(255, 255, 255, 0.015) 1px, transparent 1px, transparent 4px);
+  background-blend-mode: overlay;
+}
+
+/* Premium Embossed 3D Logo with Cyber Gradient and Multi-layered shadows */
+.logo-3d-embossed {
+  font-family: var(--font-sans);
+  font-size: 1.9rem;
+  font-weight: 900; /* Ultra-Bold (900) */
+  letter-spacing: 4px; /* Letter-spacing 4px */
+  background: linear-gradient(135deg, #00f2fe 0%, #ba8cfc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #00f2fe;
+  display: inline-block;
+  line-height: 1.1;
+  /* 3D Embossing multi-layered shadows */
+  text-shadow: 
+    0 1px 0 rgba(0, 242, 254, 0.6),
+    0 2px 0 #050b18, 
+    0 3px 0 #040812, 
+    0 4px 0 #02040a, 
+    0 12px 22px rgba(0, 0, 0, 0.95);
+  /* Use drop-shadow filter to merge perfectly on webkit browsers with text clip */
+  filter: 
+    drop-shadow(0 0 15px rgba(0, 242, 254, 0.25));
+}
+
+@media (min-width: 640px) {
+  .logo-3d-embossed {
+    font-size: 2.6rem;
+  }
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.brand-logo {
+  font-family: var(--font-sans);
+  font-size: 1.6rem;
+  font-weight: 900; /* Ultra-Bold (900) */
+  letter-spacing: 4px; /* Letter-spacing 4px */
+  background: linear-gradient(135deg, #00f2fe 0%, #ba8cfc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #00f2fe;
+  display: inline-block;
+  line-height: 1.1;
+  text-shadow: 
+    0 1px 0 rgba(0, 242, 254, 0.6),
+    0 2px 0 #050b18, 
+    0 3px 0 #040812, 
+    0 4px 0 #02040a, 
+    0 12px 22px rgba(0, 0, 0, 0.95);
+  filter: drop-shadow(0 0 15px rgba(0, 242, 254, 0.25));
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.brand-logo:hover {
+  filter: drop-shadow(0 0 25px rgba(0, 242, 254, 0.65));
+}
+
+@media (min-width: 640px) {
+  .brand-logo {
+    font-size: 2.2rem;
+  }
+}
+
+/* 특허보유 건수를 한눈에 꽂히게 만드는 사이언 네온 카운터 배지 (1.4배 볼륨 업 및 조명 및 텍스트 가늘게 보정) */
+.patent-counter-badge {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    background: linear-gradient(180deg, rgba(0, 242, 254, 0.12) 0%, rgba(0, 242, 254, 0.03) 100%);
+    border: 1.5px solid rgba(0, 242, 254, 0.75);
+    padding: 11px 28px;
+    border-radius: 10px;
+    
+    /* 텍두리 조명 빛 축소 처리 */
+    box-shadow: 
+      0 0 12px rgba(0, 242, 254, 0.4),
+      inset 0 0 8px rgba(0, 242, 254, 0.2);
+    
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    animation: neon-marquee-shimmer 2.2s infinite alternate ease-in-out;
+}
+
+.patent-counter-badge::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 242, 254, 0.1) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-25deg);
+    animation: neon-sweep 4s infinite linear;
+}
+
+@keyframes neon-sweep {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+@keyframes neon-marquee-shimmer {
+    0% {
+      box-shadow: 
+        0 0 8px rgba(0, 242, 254, 0.3),
+        inset 0 0 6px rgba(0, 242, 254, 0.15);
+      border-color: rgba(0, 207, 218, 0.6);
+      filter: brightness(0.95);
+    }
+    100% {
+      box-shadow: 
+        0 0 15px rgba(0, 242, 254, 0.5),
+        inset 0 0 10px rgba(0, 242, 254, 0.25);
+      border-color: rgba(51, 245, 255, 0.85);
+      filter: brightness(1.05);
+    }
+}
+
+.badge-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #10b981;
+    border-radius: 50%;
+    box-shadow: 
+      0 0 6px #10b981, 
+      0 0 12px rgba(16, 185, 129, 0.6);
+    animation: green-pulse 1.4s infinite alternate ease-in-out;
+}
+
+@keyframes green-pulse {
+    0% {
+      transform: scale(0.92);
+      opacity: 0.8;
+      box-shadow: 0 0 4px #10b981, 0 0 10px rgba(16, 185, 129, 0.4);
+    }
+    100% {
+      transform: scale(1.08);
+      opacity: 1;
+      box-shadow: 0 0 8px #10b981, 0 0 16px rgba(5, 255, 211, 0.6);
+    }
+}
+
+.badge-text {
+    color: #ffffff;
+    font-size: 1.15rem;
+    font-weight: 500; /* 텍스트 가늘게 보정 (500) */
+    letter-spacing: 2px;
+    font-family: var(--font-sans);
+    text-shadow: none;
+    white-space: nowrap;
+}
+
+/* 숫자 크기를 대폭 키우고 강력하게 발광 처리 */
+.badge-number {
+    color: #00f2fe;
+    font-size: 1.85rem;
+    font-weight: 700; /* 숫자 가늘게 보정 (700) */
+    font-family: var(--font-mono);
+    text-shadow: 
+      0 0 6px rgba(0, 242, 254, 0.7),
+      0 0 16px rgba(0, 242, 254, 0.4);
+}
+
+/* 시스템 푸터 관련 클래스 정의 */
+.system-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .system-footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.footer-left {
+  font-family: var(--font-sans);
+  color: #94a3b8; /* text-slate-400 */
+  font-size: 0.825rem;
+  line-height: 1.8;
+  font-weight: 400;
+  text-align: left;
+}
+
+.footer-left span {
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.audio-control {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+
+.hum-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+}
+
+@keyframes borderGlowPulse {
+  0%, 100% {
+    border-color: rgba(0, 242, 254, 0.2);
+    box-shadow: 0 0 25px rgba(0, 242, 254, 0.1), inset 0 0 15px rgba(0, 242, 254, 0.03);
+  }
+  50% {
+    border-color: rgba(0, 242, 254, 0.55);
+    box-shadow: 0 0 45px rgba(0, 242, 254, 0.35), inset 0 0 25px rgba(0, 242, 254, 0.1);
+  }
+}
+
+.big-box-glow {
+  border: 1px solid rgba(0, 242, 254, 0.2);
+  animation: borderGlowPulse 4.5s ease-in-out infinite;
+}
+
+
+
+
