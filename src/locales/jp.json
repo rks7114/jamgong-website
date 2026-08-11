@@ -2,21 +2,30 @@
   "nav": {
     "tech": "技術検証",
     "business": "事業領域",
-    "searchPlaceholder": "ソリューションおよび特許技術検索...",
+    "hqCaption": "HEADQUARTERS · SEOUL",
+    "familySites": "FAMILY SITES",
+    "appliedCase": "適用事例 (3Dコマース) →",
+    "searchPlaceholder": "ソリューションおよび特許技術検索... [/]",
     "mobileSearchPlaceholder": "検索...",
-    "searchRecommend": "おすすめ検索語: ジャムゴンオラクル, ニューラルシンク, 特許",
+    "searchRecommend": "おすすめ検索語: 時系列, 四柱, 愛犬, ホログラム, オラクル, 特許",
     "noResults": "検索結果が存在しません。"
   },
   "hero": {
     "titleLine1": "AIベースのデータ分析と",
     "titleLine2": "デジタルプラットフォーム技術企業",
-    "subtitle": "AIベースのデータ分析とデジタルプラットフォームを研究・開発する技術企業",
+    "subtitle": "数理・天体・統計・言語データを一つのコアに、ジャムゴンの4大核心技術がサービスへと繋がります",
     "btnTech": "技術検証を見る",
     "btnInyeon": "잼공인연사찰 →",
     "btnTalk": "잼공톡 →",
     "btnOracle": "잼공오라클 →",
     "oracleTooltip": "준비 中",
-    "btnBusiness": "事業領域を探る"
+    "btnBusiness": "事業領域を探る",
+    "statIpTitle": "IP 17件",
+    "statIpSub": "特許16・商標1 出願中",
+    "statCoreTitle": "4大核心技術",
+    "statCoreSub": "数理・天体・感情・ホログラム",
+    "statGlobalTitle": "KO·EN·JP グローバル",
+    "statGlobalSub": "3ヶ国語対応"
   },
   "techProof": {
     "subtitle": "出願中の核心技術、構造と数値で説明します",
@@ -29,8 +38,8 @@
   },
   "business": {
     "title": "4大核心技術",
-    "subtitle": "ソリューションポートフォリオ",
-    "portfolioSubtitle": "ソリューションポートフォリオ (特許出願16件・商標出願1件ベース)"
+    "subtitle": "技術が製品になります",
+    "portfolioSubtitle": "技術が製品になります"
   },
   "cards": {
     "oracle": {
@@ -72,8 +81,8 @@
     "copyright": "Copyright © 2026 JAMGONG. All rights reserved."
   },
   "portfolio": {
-    "title": "ソリューションポートフォリオ (特許出願16件·商標出願1件基盤)",
-    "badge": "特許出願16件·商標出願1件基盤",
+    "title": "特許ポートフォリオ",
+    "badge": "特許出願16件·商標出願1件",
     "patentNoLabel": "特許出願中",
     "pending": "特許出願中",
     "cards": {

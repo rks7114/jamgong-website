@@ -2,21 +2,30 @@
   "nav": {
     "tech": "기술 검증",
     "business": "사업 영역",
-    "searchPlaceholder": "솔루션 및 특허 기술 검색...",
+    "hqCaption": "HEADQUARTERS · SEOUL",
+    "familySites": "FAMILY SITES",
+    "appliedCase": "적용 사례 (3D 커머스) →",
+    "searchPlaceholder": "솔루션 및 특허 기술 검색... [/]",
     "mobileSearchPlaceholder": "솔루션 및 특허 검색...",
-    "searchRecommend": "추천 검색어: 잼공오라클, 뉴럴싱크, 특허",
+    "searchRecommend": "추천 검색어: 시계열, 사주, 반려견, 홀로그램, 잼공오라클, 특허",
     "noResults": "검색 결과가 존재하지 않습니다."
   },
   "hero": {
     "titleLine1": "AI 기반 데이터 분석과",
     "titleLine2": "디지털 플랫폼 기술기업",
-    "subtitle": "AI 기반 데이터 분석과 디지털 플랫폼을 연구·개발하는 기술 기업",
+    "subtitle": "수학·천문·통계·언어 데이터를 하나의 코어로, 잼공의 4대 핵심 기술이 서비스로 연결됩니다",
     "btnTech": "기술 검증 보기",
     "btnInyeon": "잼공인연사찰 →",
     "btnTalk": "잼공톡 →",
     "btnOracle": "잼공오라클 →",
     "oracleTooltip": "준비 중",
-    "btnBusiness": "사업 영역 탐색"
+    "btnBusiness": "사업 영역 탐색",
+    "statIpTitle": "IP 17건",
+    "statIpSub": "특허 16 · 상표 1 출원 중",
+    "statCoreTitle": "4대 핵심 기술",
+    "statCoreSub": "수리·천문·감정·홀로그램",
+    "statGlobalTitle": "KO·EN·JP 글로벌",
+    "statGlobalSub": "3개 국어 지원"
   },
   "techProof": {
     "subtitle": "출원 중인 핵심 기술, 구조와 수치로 설명합니다",
@@ -29,8 +38,8 @@
   },
   "business": {
     "title": "4대 핵심 기술",
-    "subtitle": "솔루션 포트폴리오",
-    "portfolioSubtitle": "솔루션 포트폴리오 (특허출원 16건 · 상표출원 1건 기반)"
+    "subtitle": "기술이 제품이 됩니다",
+    "portfolioSubtitle": "기술이 제품이 됩니다"
   },
   "cards": {
     "oracle": {
@@ -72,8 +81,8 @@
     "copyright": "Copyright © 2026 JAMGONG. All rights reserved."
   },
   "portfolio": {
-    "title": "솔루션 포트폴리오 (특허출원 16건 · 상표출원 1건 기반)",
-    "badge": "특허출원 16건 · 상표출원 1건 기반",
+    "title": "특허 포트폴리오",
+    "badge": "특허출원 16건 · 상표출원 1건",
     "patentNoLabel": "특허출원 중",
     "pending": "특허출원 중",
     "cards": {

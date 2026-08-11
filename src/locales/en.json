@@ -2,21 +2,30 @@
   "nav": {
     "tech": "Tech Proof",
     "business": "Business Units",
-    "searchPlaceholder": "Search solutions and patents...",
+    "hqCaption": "HEADQUARTERS · SEOUL",
+    "familySites": "FAMILY SITES",
+    "appliedCase": "Applied Case (3D Commerce) →",
+    "searchPlaceholder": "Search solutions & patents... [/]",
     "mobileSearchPlaceholder": "Search...",
-    "searchRecommend": "Recommended: JAMGONG ORACLE, NEURALSYNC, Patents",
+    "searchRecommend": "Recommended: Time-series, Saju, Pet, Hologram, Oracle, Patent",
     "noResults": "No search results found."
   },
   "hero": {
     "titleLine1": "AI-Powered Data Analytics &",
     "titleLine2": "Digital Platform Tech Company",
-    "subtitle": "A technology company researching and developing AI-based data analytics and digital platforms.",
+    "subtitle": "Unifying math, astronomy, statistics, and language data into one core—Jamgong's 4 core technologies connect into services",
     "btnTech": "View Tech Proof",
     "btnInyeon": "Jamgong Inyeon Sachal →",
     "btnTalk": "Jamgong Talk →",
     "btnOracle": "Jamgong Oracle →",
     "oracleTooltip": "Coming Soon",
-    "btnBusiness": "Explore Business Units"
+    "btnBusiness": "Explore Business Units",
+    "statIpTitle": "IP 17 Cases",
+    "statIpSub": "16 Patents · 1 Trademark Pending",
+    "statCoreTitle": "4 Core Techs",
+    "statCoreSub": "Math · Astronomy · Emotion · Holo",
+    "statGlobalTitle": "KO·EN·JP Global",
+    "statGlobalSub": "Trilingual Support"
   },
   "techProof": {
     "subtitle": "Core technologies pending patents, presented with structure and figures",
@@ -29,8 +38,8 @@
   },
   "business": {
     "title": "4 Core Technologies",
-    "subtitle": "Solution Portfolio",
-    "portfolioSubtitle": "Solution Portfolio (Based on 16 Patent Applications & 1 Trademark)"
+    "subtitle": "Connecting technologies into products",
+    "portfolioSubtitle": "Connecting technologies into products"
   },
   "cards": {
     "oracle": {
@@ -72,8 +81,8 @@
     "copyright": "Copyright © 2026 JAMGONG. All rights reserved."
   },
   "portfolio": {
-    "title": "Solution Portfolio (Based on 16 Patent Applications · 1 Trademark)",
-    "badge": "Based on 16 Patent Applications · 1 Trademark",
+    "title": "Patent Portfolio",
+    "badge": "16 Patent Applications · 1 Trademark",
     "patentNoLabel": "Patent Pending",
     "pending": "Patent Pending",
     "cards": {
